@@ -108,3 +108,7 @@
 a{
   text-decoration: none;
 }
+.e-con-inner{
+  display: flex;
+  background-color: #189A46;
+}
