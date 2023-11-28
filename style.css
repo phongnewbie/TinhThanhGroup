@@ -187,9 +187,9 @@ ul li{
 #mainFieldTwo{
   display: flex;
   margin-top: 50px;
-  margin-left: 140px;
+  margin-left: 75px;
   border: orangered 1px solid;
-  width: 1300px;
+  width: 1117px;
   height: 200px;
 }
 
@@ -202,9 +202,9 @@ ul li{
 #mainFieldThree{
   display: flex;
   margin-top: 50px;
-  margin-left: 140px;
+  margin-left: 75px;
   border: palevioletred 1px solid;
-  width: 1300px;
+  width: 1117px;
   height: 200px;
 }
 
