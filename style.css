@@ -123,6 +123,7 @@ a{
 .e-con-inner{
   display: flex;
   background-color: #189A46;
+  width: 1200px;
 }
 .arrow_Up{
   position: fixed;
