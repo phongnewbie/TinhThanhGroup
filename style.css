@@ -207,7 +207,9 @@ ul li{
   width: 1117px;
   height: 200px;
 }
-
+#footer{
+  width: 1200px;
+}
 #mainFieldThree img{
   height: 160px;
   width: 350px;
