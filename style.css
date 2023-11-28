@@ -1,3 +1,10 @@
+body{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+  font-weight: bolder;
+  --animate-duration: 800ms;
+  --animate-delay: 5s;
+}
 .header {
     position: absolute;
     top: 0;
@@ -85,14 +92,18 @@
 }
 
 .features .area-box h4 a {
-    color: #000c04;
+    color: red;
 }
-
+.read{
+  color: chocolate;
+}
 .features .area-box p {
     color: #696969;
 }
 
 .features .area-box {
+  width: 300px;
+  height: 400px;
     padding: 40px 30px;
     transition: all 0.5s ease 0s;
     border-radius: 10px;
@@ -107,8 +118,227 @@
 
 a{
   text-decoration: none;
+  color: white;
 }
 .e-con-inner{
   display: flex;
   background-color: #189A46;
 }
+.arrow_Up{
+  position: fixed;
+  bottom: 10px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  border: blue 2px solid;
+  color: darkcyan ;
+  border-radius: 30%;
+  cursor: pointer;
+  animation: border-color-change 1.5s linear infinite ;
+}
+@keyframes border-color-change {
+  0% {
+    border-color: #ff0000;
+  }
+  50% {
+    border-color: orange;
+  }
+  100% {
+    border-color: blue;
+  }
+}
+ul li{
+  text-decoration: none;
+  list-style-type: none;
+}
+.arrow_Up:hover{
+  background-color: darkgoldenrod;
+}
+.info p{
+  margin-left: 15px;
+}
+.fa-arrow-up{
+  position: absolute;
+  right: 12px;
+  top: 10px;
+}
+
+.contentField{
+  width: 600px;
+  height: 10px;
+  border-color: cornflowerblue;
+}
+
+#mainField{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 140px;
+  border: #189A46 1px solid;
+  width: 1300px;
+  height: 200px;
+}
+
+#mainField img{
+  height: 160px;
+  width: 350px;
+  max-width: fit-content;
+}
+
+#mainFieldTwo{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 140px;
+  border: orangered 1px solid;
+  width: 1300px;
+  height: 200px;
+}
+
+#mainFieldTwo img{
+  height: 160px;
+  width: 350px;
+  max-width: fit-content;
+}
+
+#mainFieldThree{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 140px;
+  border: palevioletred 1px solid;
+  width: 1300px;
+  height: 200px;
+}
+
+#mainFieldThree img{
+  height: 160px;
+  width: 350px;
+  max-width: fit-content;
+}
+
+
+
+
+
+
+.navbar-nav li{
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  color: white;
+  line-height: 20px;
+}
+.introducePart ul li a{
+  display: block;
+
+}
+
+.navbar-nav ul li:hover .extraMenu {
+  display: flex;
+}
+.navbar-nav ul li >.extraMenu{
+  display: none;
+  position: absolute;
+}
+
+
+
+
+
+svg{
+  position: absolute;
+  top: 50%;
+  margin-top: -60px;
+  left: 50%;
+  margin-left: -225px;
+}
+
+
+/* .mainTwo{
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2s ease-in;
+  transform: translate(-50%, -50%);
+  
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.mainTwo:hover {
+  visibility: visible;
+  animation: fade-in ease-in-out;
+} */
+.text-effect{
+  overflow:hidden;
+  position:relative;
+  -webkit-filter:contrast(110%) brightness(190%);
+  filter:contrast(110%) brightness(190%)
+}
+.neon-bsw-text{
+  position:relative;
+  background:black;
+  color:transparent;
+  text-align: center;
+}
+.neon-bsw-text::before,.neon-bsw-text::after{
+  content:attr(data-text);
+  color:white;
+  -webkit-filter:blur(0.02em);
+  filter:blur(0.02em);
+  position:absolute;
+  top:0;
+  left:0;
+  pointer-events:none
+}
+.neon-bsw-text::after{
+  mix-blend-mode:difference
+}
+.gradient,.spotlight-bsw-bg{
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  pointer-events:none;
+  z-index:10
+}
+.gradient{
+  background:linear-gradient(45deg,red,blue);
+  mix-blend-mode:multiply
+}
+.spotlight-bsw-bg{
+  -webkit-animation:light 5s infinite linear;
+  animation:light 5s infinite linear;
+  background:radial-gradient(circle,white,transparent 25%) 0 0/25% 25%,radial-gradient(circle,white,black 25%) 50% 50%/12.5% 12.5%;
+  top:-100%;
+  left:-100%;
+  mix-blend-mode:color-dodge
+}
+@-webkit-keyframes light{
+  100%{
+      -webkit-transform:translate3d(50%,50%,0);
+      transform:translate3d(50%,50%,0)
+  }
+}
+@keyframes light{
+  100%{
+      -webkit-transform:translate3d(50%,50%,0);
+      transform:translate3d(50%,50%,0)
+  }
+}
+.neon-bsw-text{
+ 
+  text-transform:uppercase;
+  text-align:center;
+  margin:0
+}
+.neon-bsw-text:focus{
+  outline:none;
+  border:1px dotted white
+}
+
