@@ -2,8 +2,7 @@ body{
   font-family: 'Times New Roman', Times, serif;
   font-size: medium;
   font-weight: bolder;
-  --animate-duration: 800ms;
-  --animate-delay: 5s;
+
 }
 .header {
     position: absolute;
@@ -131,12 +130,18 @@ a{
 }
 .area-boxTwo{
   background-image: url("/image/DuAn2.png");
+  background-position: center;
+
 }
 .area-boxThree{
   background-image: url("/image/DuAn3.png");
+  background-position: center;
+
 }
 .area-boxFour{
   background-image: url("/image/DuAn4.png");
+  background-position: center;
+
 }
 .area-boxFive{
   background-image: url("/image/DuAn5.png");
@@ -144,9 +149,13 @@ a{
 }
 .area-boxSix{
   background-image: url("/image/DuAn6.png");
+  background-position: center;
+
 }
 .area-boxSeven{
   background-image: url("/image/DuAN7.png");
+  background-position: center;
+
 }
 .area-boxEight{
   background-image: url("/image/DuAn8.png");
@@ -154,12 +163,18 @@ a{
 }
 .area-boxNine{
   background-image: url("/image/DuAn9.png");
+  background-position: center;
+
 }
 .area-boxTen{
   background-image: url("/image/DuAn10.png");
+  background-position: center;
+
 }
 .area-boxEleven{
   background-image: url("/image/DuAn11.png");
+  background-position: center;
+
 }
 .area-boxTwelve{
   background-image: url("/image/DuAn12.png");
@@ -226,7 +241,9 @@ margin-top: 50px;
 .partner header{
   text-align: center;
 }
-
+li{
+  list-style-type: none;
+}
 @keyframes border-color-change {
   0% {
     border-color: #ff0000;
@@ -237,6 +254,18 @@ margin-top: 50px;
   100% {
     border-color: blue;
   }
+}
+.strong_Side {
+  background-color: whitesmoke;
+  width: 500px;
+  box-shadow: 0 0 10px #ccc;
+  animation: fadeIn 2s ease-in-out;
+  text-align: center;
+  margin-left: 600px;
+  font-size: larger;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
 }
 ul li{
   text-decoration: none;
@@ -306,12 +335,6 @@ ul li{
   width: 350px;
   max-width: fit-content;
 }
-
-
-
-
-
-
 .navbar-nav li{
   display: inline-block;
   width: 50px;
