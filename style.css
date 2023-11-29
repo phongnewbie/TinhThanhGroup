@@ -182,9 +182,14 @@ a{
   font-weight: bolder;
   font-size: large;
 }
-
-.container img{
-  width: 100px;
+.container2{
+  display: grid;
+  grid-template-columns: 4;
+  grid-row: 3;
+  margin-top: 20px;
+}
+.cardTwo{
+  margin-top: 20px;
 }
 .arrow_Up{
   position: fixed;
@@ -199,18 +204,28 @@ a{
   animation: border-color-change 1.5s linear infinite ;
 }
 
-.company-Partner{
-  display: grid;
-  gap: 3px;
-  grid-column: 4;
-  grid-row: 3;
-}
-.company-Partner .card{
-  margin-bottom: 20px;
-  margin-right: 40px;
-  padding: 10px;
+.partnerPart{
+ margin-left: 150px;
+  margin-top: 30px;
+  border: brown 1px solid;
 }
 
+.partnerPart header{
+  text-align: center;
+  font-weight: bolder;
+  font-size: larger;
+  color: burlywood;
+}
+.partner{
+margin-top: 50px;
+  gap: 20px;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+.partner header{
+  text-align: center;
+}
 
 @keyframes border-color-change {
   0% {
