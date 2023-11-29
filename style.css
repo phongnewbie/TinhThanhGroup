@@ -167,6 +167,25 @@ a{
   background-size:cover ;
 }
 
+
+#PartnerCompany{
+  margin-top: 100px;
+  border: gray 2px solid;
+ width: 1280px;
+  margin-bottom: 50px;
+  margin-left: 150px;
+}
+
+
+#PartnerCompany header{
+  text-align: center;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.container img{
+  width: 100px;
+}
 .arrow_Up{
   position: fixed;
   bottom: 10px;
@@ -179,6 +198,20 @@ a{
   cursor: pointer;
   animation: border-color-change 1.5s linear infinite ;
 }
+
+.company-Partner{
+  display: grid;
+  gap: 3px;
+  grid-column: 4;
+  grid-row: 3;
+}
+.company-Partner .card{
+  margin-bottom: 20px;
+  margin-right: 40px;
+  padding: 10px;
+}
+
+
 @keyframes border-color-change {
   0% {
     border-color: #ff0000;
