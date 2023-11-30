@@ -1,260 +1,289 @@
-body{
+body {
   font-family: 'Times New Roman', Times, serif;
   font-size: medium;
   font-weight: bolder;
 
 }
+
 .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-  }
-  .header .nav-link:hover,
-  .header .nav-link.active {
-    color: #35a22c !important;
-    /* thêm thuộc tính important để đè code css */
-  }
-  
-.tinThanh_Group{
-    width: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
 }
 
-  .header .nav-link {
-    position: relative;
-  }
-  .header .nav-link::after {
-    content: "";
-    display: flex;
-    width: 0;
-    height: 3px;
-    background-color: #35a22c;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transition: all 0.5s;
-    /* để tạo hiệu ứng after chạy từ trái qua phải thì phải thêm thuộc tính transition vào */
-  }
-  
-  .header .nav-link:hover::after,
-  .header .nav-link.active::after {
-    width: 100%;
-  }
-  /* disabled ở trong thẻ a đang bị gắn thuộc tính pointer-events: none;, thuộc tính này sẽ huỷ hết các thuộc tính hover của thẻ a, nếu ko cần thì gỡ ra, và thêm href vào */
-  
-  .slider .carousel-item img {
-    height: 550px;
-    object-fit: cover;
-  }
-  
-  .slider .carousel-caption img {
-    width: 180px;
-    height: 180px;
-  }
-  
-  .slider .carousel-caption {
-    bottom: 50%;
-    transform: translateY(50%);
-    z-index: 10;
-  }
-  
-  .slider .carousel-item::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .slider .carousel-indicators [data-bs-target] {
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-  }
-  
-  .portfolio .main .nav-link.active {
-    background-color: #35a22c;
-    color: white !important;
-  }
+.header .nav-link:hover,
+.header .nav-link.active {
+  color: #35a22c !important;
+  /* thêm thuộc tính important để đè code css */
+}
+
+.tinThanh_Group {
+  width: 300px;
+}
+
+.header .nav-link {
+  position: relative;
+}
+
+.header .nav-link::after {
+  content: "";
+  display: flex;
+  width: 0;
+  height: 3px;
+  background-color: #35a22c;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 0.5s;
+  /* để tạo hiệu ứng after chạy từ trái qua phải thì phải thêm thuộc tính transition vào */
+}
+
+.header .nav-link:hover::after,
+.header .nav-link.active::after {
+  width: 100%;
+}
+
+/* disabled ở trong thẻ a đang bị gắn thuộc tính pointer-events: none;, thuộc tính này sẽ huỷ hết các thuộc tính hover của thẻ a, nếu ko cần thì gỡ ra, và thêm href vào */
+
+.slider .carousel-item img {
+  height: 550px;
+  object-fit: cover;
+}
+
+.slider .carousel-caption img {
+  width: 180px;
+  height: 180px;
+}
+
+.slider .carousel-caption {
+  bottom: 50%;
+  transform: translateY(50%);
+  z-index: 10;
+}
+
+.slider .carousel-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slider .carousel-indicators [data-bs-target] {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.portfolio .main .nav-link.active {
+  background-color: #35a22c;
+  color: white !important;
+}
 
 
-  .features {
-    background-color: #f9f7fe;
+.features {
+  background-color: #f9f7fe;
 }
 
 .features .icon {
-    font-size: 30px;
-    color: #189A46;
+  font-size: 30px;
+  color: #189A46;
 }
 
 .features .area-box h4 a {
-    color: aquamarine;
-    font-weight: bolder;
+  color: aquamarine;
+  font-weight: bolder;
 }
-.read{
+
+.read {
   color: chocolate;
 }
+
 .features .area-box p {
-    color: #696969;
+  color: #696969;
 }
 
 .features .area-box {
   width: 300px;
   height: 400px;
-    padding: 40px 30px;
-    transition: all 0.5s ease 0s;
-    border-radius: 10px;
-    background-color: #fff;
-    position: relative;
-    margin-bottom: 30px;
+  padding: 40px 30px;
+  transition: all 0.5s ease 0s;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 30px;
 }
 
 .features .area-box:hover {
-    background: #f9f7fe;
+  background: #f9f7fe;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
-.e-con-inner{
+
+.e-con-inner {
   display: flex;
   background-color: #189A46;
   width: 1590px;
 }
-.area-box p{
+
+.area-box p {
   color: #35a22c;
 }
-.area-boxTwo{
+
+.area-boxTwo {
   background-image: url("/image/DuAn2.png");
   background-position: center;
 
 }
-.area-boxThree{
+
+.area-boxThree {
   background-image: url("/image/DuAn3.png");
   background-position: center;
 
 }
-.area-boxFour{
+
+.area-boxFour {
   background-image: url("/image/DuAn4.png");
   background-position: center;
 
 }
-.area-boxFive{
+
+.area-boxFive {
   background-image: url("/image/DuAn5.png");
   background-position: center;
 }
-.area-boxSix{
+
+.area-boxSix {
   background-image: url("/image/DuAn6.png");
   background-position: center;
 
 }
-.area-boxSeven{
+
+.area-boxSeven {
   background-image: url("/image/DuAN7.png");
   background-position: center;
 
 }
-.area-boxEight{
+
+.area-boxEight {
   background-image: url("/image/DuAn8.png");
-  background-position:center ;
+  background-position: center;
 }
-.area-boxNine{
+
+.area-boxNine {
   background-image: url("/image/DuAn9.png");
   background-position: center;
 
 }
-.area-boxTen{
+
+.area-boxTen {
   background-image: url("/image/DuAn10.png");
   background-position: center;
 
 }
-.area-boxEleven{
+
+.area-boxEleven {
   background-image: url("/image/DuAn11.png");
   background-position: center;
 
 }
-.area-boxTwelve{
+
+.area-boxTwelve {
   background-image: url("/image/DuAn12.png");
-  
-  background-size:cover ;
+
+  background-size: cover;
 }
 
 
-#PartnerCompany{
+#PartnerCompany {
   margin-top: 100px;
   border: gray 2px solid;
- width: 1280px;
+  width: 1280px;
   margin-bottom: 50px;
   margin-left: 150px;
 }
 
 
-#PartnerCompany header{
+#PartnerCompany header {
   text-align: center;
   font-weight: bolder;
   font-size: large;
 }
-.container2{
+
+.container2 {
   display: grid;
   grid-template-columns: 4;
   grid-row: 3;
   margin-top: 20px;
 }
-.cardTwo{
+
+.cardTwo {
   margin-top: 20px;
 }
-.arrow_Up{
+
+.arrow_Up {
   position: fixed;
   bottom: 10px;
   right: 40px;
   width: 40px;
   height: 40px;
   border: blue 2px solid;
-  color: chocolate ;
+  color: chocolate;
   border-radius: 30%;
   cursor: pointer;
-  animation: border-color-change 1.5s linear infinite ;
+  animation: border-color-change 1.5s linear infinite;
 }
 
-.partnerPart{
- margin-left: 150px;
+.partnerPart {
+  margin-left: 150px;
   margin-top: 30px;
   border: brown 1px solid;
 }
 
-.partnerPart header{
+.partnerPart header {
   text-align: center;
   font-weight: bolder;
   font-size: larger;
   color: burlywood;
 }
-.partner{
-margin-top: 50px;
+
+.partner {
+  margin-top: 50px;
   gap: 20px;
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(3, 1fr);
 }
-.partner header{
+
+.partner header {
   text-align: center;
 }
-li{
+
+li {
   list-style-type: none;
 }
+
 @keyframes border-color-change {
   0% {
     border-color: #ff0000;
   }
+
   50% {
     border-color: orange;
   }
+
   100% {
     border-color: blue;
   }
 }
+
 .strong_Side {
   background-color: whitesmoke;
   width: 500px;
@@ -267,29 +296,33 @@ li{
   margin-bottom: 50px;
 
 }
-ul li{
+
+ul li {
   text-decoration: none;
   list-style-type: none;
 }
-.arrow_Up:hover{
+
+.arrow_Up:hover {
   background-color: darkgoldenrod;
 }
-.info p{
+
+.info p {
   margin-left: 15px;
 }
-.fa-arrow-up{
+
+.fa-arrow-up {
   position: absolute;
   right: 12px;
   top: 10px;
 }
 
-.contentField{
+.contentField {
   width: 600px;
   height: 10px;
   border-color: cornflowerblue;
 }
 
-#mainField{
+#mainField {
   display: flex;
   margin-top: 50px;
   margin-left: 75px;
@@ -298,13 +331,13 @@ ul li{
   height: 200px;
 }
 
-#mainField img{
+#mainField img {
   height: 160px;
   width: 350px;
   max-width: fit-content;
 }
 
-#mainFieldTwo{
+#mainFieldTwo {
   display: flex;
   margin-top: 50px;
   margin-left: 75px;
@@ -313,13 +346,13 @@ ul li{
   height: 215px;
 }
 
-#mainFieldTwo img{
+#mainFieldTwo img {
   height: 160px;
   width: 350px;
   max-width: fit-content;
 }
 
-#mainFieldThree{
+#mainFieldThree {
   display: flex;
   margin-top: 50px;
   margin-left: 75px;
@@ -327,22 +360,26 @@ ul li{
   width: 1117px;
   height: 200px;
 }
-#footer{
+
+#footer {
   width: 1200px;
 }
-#mainFieldThree img{
+
+#mainFieldThree img {
   height: 160px;
   width: 350px;
   max-width: fit-content;
 }
-.navbar-nav li{
+
+.navbar-nav li {
   display: inline-block;
   width: 50px;
   height: 20px;
   color: white;
   line-height: 20px;
 }
-.introducePart ul li a{
+
+.introducePart ul li a {
   display: block;
 
 }
@@ -350,20 +387,21 @@ ul li{
 .navbar-nav ul li:hover .extraMenu {
   display: flex;
 }
-.navbar-nav ul li >.extraMenu{
+
+.navbar-nav ul li>.extraMenu {
   display: none;
   position: absolute;
 }
 
-.elementor-icon-list-items{
+.elementor-icon-list-items {
   margin-right: 20px;
 }
 
-.area-boxOne{
+.area-boxOne {
   background-image: url('/image/DuAn1.png');
 }
 
-svg{
+svg {
   position: absolute;
   top: 50%;
   margin-top: -60px;
@@ -371,94 +409,166 @@ svg{
   margin-left: -225px;
 }
 
-
-/* .mainTwo{
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 2s ease-in;
-  transform: translate(-50%, -50%);
-  
+.text-effect {
+  overflow: hidden;
+  position: relative;
+  -webkit-filter: contrast(110%) brightness(190%);
+  filter: contrast(110%) brightness(190%)
 }
 
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-.mainTwo:hover {
-  visibility: visible;
-  animation: fade-in ease-in-out;
-} */
-.text-effect{
-  overflow:hidden;
-  position:relative;
-  -webkit-filter:contrast(110%) brightness(190%);
-  filter:contrast(110%) brightness(190%)
-}
-.neon-bsw-text{
-  position:relative;
-  background:black;
-  color:transparent;
+.neon-bsw-text {
+  position: relative;
+  background: black;
+  color: transparent;
   text-align: center;
 }
-.neon-bsw-text::before,.neon-bsw-text::after{
-  content:attr(data-text);
-  color:white;
-  -webkit-filter:blur(0.02em);
-  filter:blur(0.02em);
-  position:absolute;
-  top:0;
-  left:0;
-  pointer-events:none
-}
-.neon-bsw-text::after{
-  mix-blend-mode:difference
-}
-.gradient,.spotlight-bsw-bg{
-  position:absolute;
-  top:0;
-  left:0;
-  bottom:0;
-  right:0;
-  pointer-events:none;
-  z-index:10
-}
-.gradient{
-  background:linear-gradient(45deg,red,blue);
-  mix-blend-mode:multiply
-}
-.spotlight-bsw-bg{
-  -webkit-animation:light 5s infinite linear;
-  animation:light 5s infinite linear;
-  background:radial-gradient(circle,white,transparent 25%) 0 0/25% 25%,radial-gradient(circle,white,black 25%) 50% 50%/12.5% 12.5%;
-  top:-100%;
-  left:-100%;
-  mix-blend-mode:color-dodge
-}
-@-webkit-keyframes light{
-  100%{
-      -webkit-transform:translate3d(50%,50%,0);
-      transform:translate3d(50%,50%,0)
-  }
-}
-@keyframes light{
-  100%{
-      -webkit-transform:translate3d(50%,50%,0);
-      transform:translate3d(50%,50%,0)
-  }
-}
-.neon-bsw-text{
- 
-  text-transform:uppercase;
-  text-align:center;
-  margin:0
-}
-.neon-bsw-text:focus{
-  outline:none;
-  border:1px dotted white
+
+.neon-bsw-text::before,
+.neon-bsw-text::after {
+  content: attr(data-text);
+  color: white;
+  -webkit-filter: blur(0.02em);
+  filter: blur(0.02em);
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none
 }
 
+.neon-bsw-text::after {
+  mix-blend-mode: difference
+}
+
+.gradient,
+.spotlight-bsw-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 10
+}
+
+.gradient {
+  background: linear-gradient(45deg, red, blue);
+  mix-blend-mode: multiply
+}
+
+.spotlight-bsw-bg {
+  -webkit-animation: light 5s infinite linear;
+  animation: light 5s infinite linear;
+  background: radial-gradient(circle, white, transparent 25%) 0 0/25% 25%, radial-gradient(circle, white, black 25%) 50% 50%/12.5% 12.5%;
+  top: -100%;
+  left: -100%;
+  mix-blend-mode: color-dodge
+}
+
+@-webkit-keyframes light {
+  100% {
+    -webkit-transform: translate3d(50%, 50%, 0);
+    transform: translate3d(50%, 50%, 0)
+  }
+}
+
+@keyframes light {
+  100% {
+    -webkit-transform: translate3d(50%, 50%, 0);
+    transform: translate3d(50%, 50%, 0)
+  }
+}
+
+.neon-bsw-text {
+
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0
+}
+
+.neon-bsw-text:focus {
+  outline: none;
+  border: 1px dotted white
+}
+
+
+.strong_Side {
+  
+  padding: 20px;
+  background-color: #f5f5f5; /* Màu nền cho khối */
+  border-radius: 10px; /* Bo tròn góc cho khối */
+}
+
+h5 {
+  color: #333; /* Màu văn bản */
+}
+
+.card_Strong {
+  
+  margin-top: 20px;
+  background-color: #fff; /* Màu nền cho thẻ */
+  border: 1px solid #ddd; /* Đường viền thẻ */
+  border-radius: 8px; /* Bo tròn góc cho thẻ */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+}
+
+/* Các mục trong danh sách */
+ul li {
+  list-style: none; /* Loại bỏ dấu đầu dòng */
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* Đường viền giữa các mục */
+}
+
+/* Các biểu tượng và văn bản trong mỗi mục */
+ul li i {
+  color: #28a745; /* Màu biểu tượng */
+  margin-right: 10px; /* Khoảng cách giữa biểu tượng và văn bản */
+}
+
+/* Phần văn bản trong mỗi mục */
+ul li .Strong_side {
+  color: #333; /* Màu văn bản */
+}
+
+/* Hiệu ứng hover khi di chuột qua mỗi mục */
+ul li:hover {
+  background-color: #f8f9fa; /* Màu nền khi hover */
+}
+
+
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (max-width: 768px) {
+  .slider{
+    width: 1550px;
+  }
+  .text-effect{
+    margin-left: 440px;
+    width: 800px;
+  }
+  .neon-bsw-text{
+    text-align: center;
+  }
+  .container{
+    max-width: 770px;
+  }
+  
+.news{
+  width: 1300px;
+  margin-left: 200px;
+}
+.partnerPart{
+  width: 1200px;
+  margin-left: 250px;
+}
+
+  .mainTwo{
+    width: 890px;
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows:3 ;
+    margin-left: 350px;
+  grid-row: 3;
+  margin-top: 20px;
+  }
+}
