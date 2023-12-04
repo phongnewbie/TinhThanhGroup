@@ -682,12 +682,40 @@ ul li:hover {
   font-weight: bolder;
   color: red;
 }
+.partnerInfo{
+  width: 500px;
+  height: 600px;
+}
+.company_Partner{
+  text-align: center;
+  margin-top: 50px;
+  width: 1200px;
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
 .special_show{
   margin-left: 500px;
 }
+
+.partnerItem{
+  margin-left: 500px;
+  width: 235px;
+}
+.certificate{
+  text-align: center;
+}
+.partnerItem a{
+  margin-left: 40px;
+}
+
 .thong_So{
-  background-color: transparent;
+  
   width: 1600px;
+}
+.cardContent i{
+  margin-top: 30px;
+  width: 50px;
+  height: 50px;
 }
 .news{
   width: 1300px;
