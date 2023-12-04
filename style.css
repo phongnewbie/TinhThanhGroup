@@ -2,7 +2,6 @@ body {
   font-family: 'Times New Roman', Times, serif;
   font-size: medium;
   font-weight: bolder;
-
 }
 
 .header {
@@ -86,7 +85,7 @@ body {
 
 
 .features {
-  background-color: #f9f7fe;
+  background-color: transparent
 }
 
 .features .icon {
@@ -95,7 +94,7 @@ body {
 }
 
 .features .area-box h4 a {
-  color: aquamarine;
+  color: chartreuse;
   font-weight: bolder;
 }
 
@@ -104,7 +103,7 @@ body {
 }
 
 .features .area-box p {
-  color: #696969;
+  color: darkslateblue
 }
 
 .features .area-box {
@@ -119,7 +118,7 @@ body {
 }
 
 .features .area-box:hover {
-  background: #f9f7fe;
+  border: 2px solid  cornflowerblue;
 }
 
 a {
@@ -244,7 +243,10 @@ a {
 .partnerPart {
   margin-left: 150px;
   margin-top: 30px;
-  border: brown 1px solid;
+}
+.col{
+  border: 1px solid green;
+  padding: 10px;
 }
 
 .partnerPart header {
@@ -510,7 +512,40 @@ h5 {
   border-radius: 8px; /* Bo tròn góc cho thẻ */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
 }
-
+.card {
+  background-color: #f5f5f5;
+  border: 1px solid black;
+  width: 200px;
+  height: 250px;
+ 
+  color: deepskyblue;
+  text-align: center;
+  margin-top : 5px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc5todQjRfkpC_KMOfrtQKybvEwb-Gz3WUSg&usqp=CAU");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid rgb(21, 136, 21);
+  border-radius: 20%;
+}
+.card_Info{
+  margin-top: 20px;
+}
+.card_Info img{
+  width: 55px;
+  border-radius: 50%;
+}
+.certificate img{
+  width: 700px;
+  height: 400px;
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(5, 3fr);
+  grid-template-rows: repeat(2,1fr);
+}
 /* Các mục trong danh sách */
 ul li {
   list-style: none; /* Loại bỏ dấu đầu dòng */
@@ -557,10 +592,7 @@ ul li:hover {
   width: 1300px;
   margin-left: 200px;
 }
-.partnerPart{
-  width: 1200px;
-  margin-left: 250px;
-}
+
 
   .mainTwo{
     width: 890px;
@@ -569,6 +601,37 @@ ul li:hover {
     grid-template-rows:3 ;
     margin-left: 350px;
   grid-row: 3;
-  margin-top: 20px;
+  margin-top: 50px;
   }
+}
+
+.cardThree{
+  margin-left: 500px;
+}
+.counter{
+  margin-left: 30px;
+}
+.cardContent{
+  
+  width: 800px;
+  height: 200px;
+}
+.cardContent i{
+  width: 100px;
+  height: 50px;
+  color: green;
+  margin-left: 50px;
+}
+.cardContent h2{
+  margin-left: 20px;
+}
+.Header_TS{
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+  color: green;
+}
+.thong_So{
+  background-color: chocolate;
+  margin-bottom: 50px;
 }
