@@ -101,9 +101,11 @@ body {
 .read {
   color: chocolate;
 }
-
+.fa-circle-check{
+  color: crimson;
+}
 .features .area-box p {
-  color: darkslateblue
+  color: darkturquoise;
 }
 
 .features .area-box {
@@ -196,7 +198,7 @@ a {
 
 .area-boxTwelve {
   background-image: url("/image/DuAn12.png");
-
+background-position: center;
   background-size: cover;
 }
 
@@ -272,19 +274,7 @@ li {
   list-style-type: none;
 }
 
-@keyframes border-color-change {
-  0% {
-    border-color: #ff0000;
-  }
 
-  50% {
-    border-color: orange;
-  }
-
-  100% {
-    border-color: blue;
-  }
-}
 
 .strong_Side {
   background-color: whitesmoke;
@@ -514,7 +504,7 @@ h5 {
 }
 .card {
   background-color: #f5f5f5;
-  border: 1px solid black;
+  
   width: 200px;
   height: 250px;
  
@@ -526,7 +516,23 @@ h5 {
   background-repeat: no-repeat;
   border: 2px solid rgb(21, 136, 21);
   border-radius: 20%;
+  animation: border-color-change 1.5s linear ;
 }
+@keyframes border-color-change {
+  0% {
+    border-color: #ff0000;
+  }
+
+  50% {
+    border-color: orange;
+  }
+
+  100% {
+    border-color: blue;
+  }
+}
+
+
 .card_Info{
   margin-top: 20px;
 }
@@ -571,39 +577,6 @@ ul li:hover {
 
 
 
-@media screen and (min-width: 1024px) {}
-
-@media screen and (max-width: 768px) {
-  .slider{
-    width: 1550px;
-  }
-  .text-effect{
-    margin-left: 440px;
-    width: 800px;
-  }
-  .neon-bsw-text{
-    text-align: center;
-  }
-  .container{
-    max-width: 770px;
-  }
-  
-.news{
-  width: 1300px;
-  margin-left: 200px;
-}
-
-
-  .mainTwo{
-    width: 890px;
-    display: grid;
-    grid-template-columns: 4;
-    grid-template-rows:3 ;
-    margin-left: 350px;
-  grid-row: 3;
-  margin-top: 50px;
-  }
-}
 
 .cardThree{
   margin-left: 500px;
@@ -617,7 +590,7 @@ ul li:hover {
   height: 200px;
 }
 .cardContent i{
-  width: 100px;
+  width: 170px;
   height: 50px;
   color: green;
   margin-left: 50px;
@@ -634,4 +607,101 @@ ul li:hover {
 .thong_So{
   background-color: chocolate;
   margin-bottom: 50px;
+}
+.partnerItem{
+  width: 450px;
+  height: 250px;
+  border: 1px solid blue;
+  text-align: center;
+  animation: border-color-change 1.5s linear infinite;
+  
+  margin: 10px;
+  text-align: center;
+  
+}
+
+.partnerItem a{
+  display: block;
+  margin-left: 155px;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border: 1px solid #35a22c;
+  border-radius: 100%;
+  margin-top: 30px;
+}
+.icoin i:hover{
+  background-color: white;
+}
+.partnerItem p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.partnerInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+
+.company_Partner .service{
+  display: flex;
+}
+
+
+.partnerItem img{
+  margin-left: 8px;
+  width: 140px;
+}
+@media screen and (min-width: 1024px) {}
+
+@media screen and (max-width: 768px) {
+  .slider{
+    width: 1550px;
+  }
+  .text-effect{
+    margin-left: 440px;
+    width: 800px;
+  }
+  .neon-bsw-text{
+    text-align: center;
+  }
+  .containerfourth{
+  width: 1000px;
+  margin: 20px;
+  }
+  .grid .card{
+    margin: 30px;
+  }
+.project_Paragraph{
+  font-weight: bolder;
+  color: red;
+}
+.special_show{
+  margin-left: 500px;
+}
+.thong_So{
+  background-color: transparent;
+  width: 1600px;
+}
+.news{
+  width: 1300px;
+  margin-left: 200px;
+}
+
+
+  .mainTwo{
+    width: 890px;
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows:3 ;
+    margin-left: 350px;
+  grid-row: 3;
+  margin-top: 50px;
+  }
 }
