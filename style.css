@@ -2,6 +2,7 @@ body {
   font-family: 'Times New Roman', Times, serif;
   font-size: medium;
   font-weight: bolder;
+  
 }
 
 .header {
@@ -652,7 +653,11 @@ ul li:hover {
 .company_Partner .service{
   display: flex;
 }
-
+.company_Partner header{
+  font-size: larger;
+  font-weight: bolder;
+  color: green;
+}
 
 .partnerItem img{
   margin-left: 8px;
@@ -660,7 +665,7 @@ ul li:hover {
 }
 @media screen and (min-width: 1024px) {}
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .slider{
     width: 1550px;
   }
@@ -696,9 +701,12 @@ ul li:hover {
 .special_show{
   margin-left: 500px;
 }
-
+.company_Partner .header{
+  font-size: larger;
+  font-weight: bolder;
+}
 .partnerItem{
-  margin-left: 500px;
+  margin-left: 205px;
   width: 235px;
 }
 .certificate{
@@ -707,7 +715,9 @@ ul li:hover {
 .partnerItem a{
   margin-left: 40px;
 }
-
+.certificate{
+  margin-left: 250px;
+}
 .thong_So{
   
   width: 1600px;
