@@ -665,7 +665,7 @@ ul li:hover {
 }
 @media screen and (min-width: 1024px) {}
 
-@media screen and (max-width: 240px) {
+@media screen and (max-width: 320px) {
   .slider{
     width: 1550px;
   }
